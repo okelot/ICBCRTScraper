@@ -1,0 +1,391 @@
+https://onlinebusiness.icbc.com/deas-api/v1/webLogin/webLogin
+
+Headers:
+Accept: application/json, text/plain, */*
+Cache-control: no-cache, no-store
+Content-Type: application/json
+Expires: 0
+pragma: no-cache
+Referer: https://onlinebusiness.icbc.com/webdeas-ui/login;type=driver
+sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Microsoft Edge";v="92"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4497.0 Safari/537.36 Edg/92.0.884.0
+
+Content:
+{"drvrLastName":"****","licenceNumber":"**********","keyword":"****"}
+
+Raw:
+PUT /deas-api/v1/webLogin/webLogin HTTP/1.1
+Host: onlinebusiness.icbc.com
+Accept: application/json, text/plain, */*
+Cache-control: no-cache, no-store
+Content-Type: application/json
+Expires: 0
+pragma: no-cache
+Referer: https://onlinebusiness.icbc.com/webdeas-ui/login;type=driver
+sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Microsoft Edge";v="92"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4497.0 Safari/537.36 Edg/92.0.884.0
+Content-Length: 80
+
+{"drvrLastName":"****","licenceNumber":"**********","keyword":"****"}
+
+
+
+
+
+
+https://onlinebusiness.icbc.com/deas-api/v1/web/getAvailableAppointments
+
+Raw
+POST /deas-api/v1/web/getAvailableAppointments HTTP/1.1
+Host: onlinebusiness.icbc.com
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjE0NzA5MzAsInN1YiI6IjQ1MTA3MDkiLCJpYXQiOjE2MjE0NjkxMzAsInByb2ZpbGUiOiJ7XCJ1c2VySWRcIjpcIjQ1MTA3MDlcIixcInJvbGVzXCI6W1wiSm9lUHVibGljXCJdfSJ9.JAiXcxi8auNvqO0ceVHQBFkH4WuQ9hDL2721SVNpzcU
+Content-Type: application/json
+Referer: https://onlinebusiness.icbc.com/webdeas-ui/booking
+sec-ch-ua: "Chromium";v="92", " Not A;Brand";v="99", "Microsoft Edge";v="92"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4497.0 Safari/537.36 Edg/92.0.884.0
+Content-Length: 191
+
+{"aPosID":8,"examType":"5-R-1","examDate":"2021-05-20","ignoreReserveTime":false,"prfDaysOfWeek":"[0,1,2,3,4,5,6]","prfPartsOfDay":"[0,1]","lastName":"**","licenseNumber":"***"}
+
+Resonse:
+[{
+    "appointmentDt": {
+        "dayOfWeek": "Friday",
+        "date": "2021-10-29"
+    },
+    "startTm": "13:40",
+    "endTm": "14:30",
+    "posId": 8,
+    "resourceId": 14656,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Friday",
+        "date": "2021-10-29"
+    },
+    "startTm": "14:40",
+    "endTm": "15:30",
+    "posId": 8,
+    "resourceId": 14589,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "08:40",
+    "endTm": "09:30",
+    "posId": 8,
+    "resourceId": 14589,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "08:45",
+    "endTm": "09:35",
+    "posId": 8,
+    "resourceId": 14583,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "09:30",
+    "endTm": "10:20",
+    "posId": 8,
+    "resourceId": 14587,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "09:35",
+    "endTm": "10:25",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "10:40",
+    "endTm": "11:30",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "11:25",
+    "endTm": "12:15",
+    "posId": 8,
+    "resourceId": 14588,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "11:30",
+    "endTm": "12:20",
+    "posId": 8,
+    "resourceId": 14656,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "12:45",
+    "endTm": "13:35",
+    "posId": 8,
+    "resourceId": 14587,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "12:50",
+    "endTm": "13:40",
+    "posId": 8,
+    "resourceId": 14583,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "13:40",
+    "endTm": "14:30",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "14:45",
+    "endTm": "15:35",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Monday",
+        "date": "2021-11-01"
+    },
+    "startTm": "15:30",
+    "endTm": "16:20",
+    "posId": 8,
+    "resourceId": 14589,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "08:40",
+    "endTm": "09:30",
+    "posId": 8,
+    "resourceId": 14587,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "08:45",
+    "endTm": "09:35",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "10:40",
+    "endTm": "11:30",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "11:25",
+    "endTm": "12:15",
+    "posId": 8,
+    "resourceId": 14587,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "11:30",
+    "endTm": "12:20",
+    "posId": 8,
+    "resourceId": 14583,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "12:45",
+    "endTm": "13:35",
+    "posId": 8,
+    "resourceId": 14587,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "12:50",
+    "endTm": "13:40",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "15:30",
+    "endTm": "16:20",
+    "posId": 8,
+    "resourceId": 14588,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Tuesday",
+        "date": "2021-11-02"
+    },
+    "startTm": "15:35",
+    "endTm": "16:25",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}, {
+    "appointmentDt": {
+        "dayOfWeek": "Wednesday",
+        "date": "2021-11-03"
+    },
+    "startTm": "08:45",
+    "endTm": "09:35",
+    "posId": 8,
+    "resourceId": 14582,
+    "dlExam": {
+        "code": "5-R-1",
+        "description": "5-R-ROAD"
+    },
+    "lemgMsgId": 35
+}]
